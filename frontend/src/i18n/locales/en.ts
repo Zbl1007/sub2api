@@ -797,6 +797,35 @@ export default {
   auth: {
     welcomeBack: 'Welcome Back',
     signInToAccount: 'Sign in to your account to continue',
+    loginShell: {
+      product: 'Codex Gateway',
+      brandLine: 'Model gateway console',
+      home: 'Home',
+      kicker: 'Secure console access',
+      title: 'Enter your model gateway workspace.',
+      description: 'Keep managing keys, quota, upstream accounts, and team routing rules while Codex, Claude, Gemini, and other coding models stay behind one reliable entry point.',
+      commandTitle: 'gateway.routes',
+      routeReady: 'ready',
+      routeStandby: 'standby',
+      panelLabel: 'Account Access',
+      panelHint: 'Use email login or any enabled quick sign-in method to enter the console.',
+      showPassword: 'Show password',
+      hidePassword: 'Hide password',
+      highlights: {
+        keys: {
+          title: 'Keys and groups',
+          desc: 'Assign access by user, project, and team.'
+        },
+        flow: {
+          title: 'Account pools',
+          desc: 'Select upstreams by health and policy.'
+        },
+        cost: {
+          title: 'Quota metering',
+          desc: 'Archive requests, cost, and errors together.'
+        }
+      }
+    },
     signIn: 'Sign In',
     signingIn: 'Signing in...',
     createAccount: 'Create Account',

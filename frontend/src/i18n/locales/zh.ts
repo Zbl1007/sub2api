@@ -797,6 +797,35 @@ export default {
   auth: {
     welcomeBack: '欢迎回来',
     signInToAccount: '登录您的账户以继续',
+    loginShell: {
+      product: 'Codex 中转站',
+      brandLine: '模型网关控制台',
+      home: '返回首页',
+      kicker: '安全接入控制台',
+      title: '进入你的模型网关工作台。',
+      description: '继续管理密钥、额度、上游账号和团队路由策略，把 Codex、Claude、Gemini 等开发模型整理成一个稳定入口。',
+      commandTitle: 'gateway.routes',
+      routeReady: 'ready',
+      routeStandby: 'standby',
+      panelLabel: 'Account Access',
+      panelHint: '使用邮箱密码或已启用的快捷登录方式进入控制台。',
+      showPassword: '显示密码',
+      hidePassword: '隐藏密码',
+      highlights: {
+        keys: {
+          title: '密钥与分组',
+          desc: '按用户、项目和团队分配访问权限。'
+        },
+        flow: {
+          title: '账号池调度',
+          desc: '根据健康状态和策略自动选择上游。'
+        },
+        cost: {
+          title: '额度计量',
+          desc: '请求、成本和异常记录统一归档。'
+        }
+      }
+    },
     signIn: '登录',
     signingIn: '登录中...',
     createAccount: '创建账户',
