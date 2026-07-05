@@ -826,6 +826,50 @@ export default {
         }
       }
     },
+    registerShell: {
+      product: 'Codex 中转站',
+      brandLine: '模型网关控制台',
+      home: '返回首页',
+      kicker: '申请接入工作台',
+      title: '开通你的模型网关账号。',
+      description: '创建账号后即可申请密钥、绑定额度、加入分组，并通过统一入口调用 Codex、Claude、Gemini 等开发模型。',
+      commandTitle: 'account.onboarding',
+      loading: 'loading',
+      loaded: 'ready',
+      panelLabel: 'New Access',
+      panelHint: '填写基础信息，系统会根据站点策略完成注册或进入邮箱验证。',
+      closedTitle: '暂未开放自助注册',
+      showPassword: '显示密码',
+      hidePassword: '隐藏密码',
+      steps: {
+        identity: {
+          title: '确认身份',
+          desc: '使用邮箱建立账号，后续可接收验证与通知。'
+        },
+        policy: {
+          title: '匹配策略',
+          desc: '按邀请码、优惠码和注册规则完成准入校验。'
+        },
+        ready: {
+          title: '进入控制台',
+          desc: '注册成功后直接管理密钥、额度和路由。'
+        }
+      },
+      highlights: {
+        access: {
+          title: '统一入口',
+          desc: '一套账号接入多类开发模型和兼容接口。'
+        },
+        quota: {
+          title: '额度清晰',
+          desc: '注册后可查看余额、套餐和调用记录。'
+        },
+        route: {
+          title: '分组路由',
+          desc: '按项目或团队策略获得不同模型通道。'
+        }
+      }
+    },
     signIn: '登录',
     signingIn: '登录中...',
     createAccount: '创建账户',

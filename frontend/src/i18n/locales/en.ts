@@ -826,6 +826,50 @@ export default {
         }
       }
     },
+    registerShell: {
+      product: 'Codex Gateway',
+      brandLine: 'Model gateway console',
+      home: 'Home',
+      kicker: 'Request console access',
+      title: 'Create your model gateway account.',
+      description: 'After registration, request keys, attach quota, join groups, and call Codex, Claude, Gemini, and other coding models through one unified entry point.',
+      commandTitle: 'account.onboarding',
+      loading: 'loading',
+      loaded: 'ready',
+      panelLabel: 'New Access',
+      panelHint: 'Enter the basics. The site policy will finish registration or move you into email verification.',
+      closedTitle: 'Self-service registration is closed',
+      showPassword: 'Show password',
+      hidePassword: 'Hide password',
+      steps: {
+        identity: {
+          title: 'Confirm identity',
+          desc: 'Use email to create an account and receive verification notices.'
+        },
+        policy: {
+          title: 'Match policy',
+          desc: 'Pass invitation, promo, and registration rules before access.'
+        },
+        ready: {
+          title: 'Enter console',
+          desc: 'Manage keys, quota, and routing immediately after registration.'
+        }
+      },
+      highlights: {
+        access: {
+          title: 'Unified entry',
+          desc: 'One account for multiple coding models and compatible APIs.'
+        },
+        quota: {
+          title: 'Clear quota',
+          desc: 'Review balance, plans, and usage after sign-up.'
+        },
+        route: {
+          title: 'Group routing',
+          desc: 'Receive model lanes based on project or team policy.'
+        }
+      }
+    },
     signIn: 'Sign In',
     signingIn: 'Signing in...',
     createAccount: 'Create Account',
