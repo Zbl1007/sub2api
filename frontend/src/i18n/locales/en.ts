@@ -10,6 +10,343 @@ export default {
     login: 'Login',
     getStarted: 'Get Started',
     goToDashboard: 'Go to Dashboard',
+    station: {
+      product: 'Codex Gateway',
+      brandLine: 'Codex Gateway',
+      notice: 'Codex gateway is ready: compatible with /v1, OpenAI SDKs, Codex CLI, and common developer plugins.',
+      nav: {
+        pricing: 'Pricing',
+        features: 'Advantages',
+        workflows: 'Workflows',
+        faq: 'FAQ'
+      },
+      actions: {
+        docs: 'Docs',
+        light: 'Light',
+        dark: 'Dark'
+      },
+      hero: {
+        status: 'Online · multi-upstream routing available',
+        eyebrow: 'For Codex, Claude Code, and development teams',
+        titleA: 'A Codex gateway,',
+        titleB: 'one API for every coding model.',
+        description: 'The gateway turns OpenAI, Claude, Gemini, Antigravity, and custom upstreams into one access point: one key, transparent metering, sticky sessions, account-pool routing, and automatic fallback.',
+        primaryCta: 'Start Now',
+        secondaryCta: 'View Guide',
+        consoleTitle: 'Route Console',
+        consoleBadge: 'AI Gateway'
+      },
+      models: {
+        ready: 'ready',
+        standby: 'standby',
+        codex: 'Codex and OpenAI-compatible lane',
+        claude: 'Claude Code long-context workflows',
+        gemini: 'Gemini Pro and OAuth account pools',
+        antigravity: 'Antigravity client bridge'
+      },
+      console: {
+        policy: {
+          title: 'Policy routing',
+          desc: 'Choose paths by model, group, health, and quota.'
+        },
+        pool: {
+          title: 'Account pools',
+          desc: 'Turn multiple upstream accounts into reliable capacity.'
+        },
+        meter: {
+          title: 'Metered archive',
+          desc: 'Requests, cost, quota, and errors land in one record.'
+        }
+      },
+      pricing: {
+        title: 'Transparent pricing',
+        description: 'Put billing principles near the top so trial users know what to expect. Support credit-based, group-based, and custom plans.',
+        rows: {
+          mode: {
+            label: 'Billing mode',
+            value: 'Usage or plans'
+          },
+          rate: {
+            label: 'Rate rules',
+            value: 'Clearly shown'
+          },
+          limit: {
+            label: 'Quota control',
+            value: 'Key / group / user'
+          }
+        }
+      },
+      support: {
+        title: 'Need help',
+        description: 'Keep guides, docs, and support close to the purchase path so CLI and remote-server setup stays easy.',
+        label: 'Support',
+        value: 'Docs + console + GitHub'
+      },
+      spec: {
+        title: 'Technical specs',
+        items: {
+          security: {
+            title: 'Security',
+            desc: 'Expose platform keys externally while upstream accounts stay centrally managed and isolated.'
+          },
+          compat: {
+            title: 'Compatibility',
+            desc: 'Works with OpenAI SDKs, Codex CLI, developer plugins, and common /v1 calls.'
+          },
+          failover: {
+            title: 'Auto fallback',
+            desc: 'Switch paths by policy when an upstream fails, without changing client settings.'
+          },
+          audit: {
+            title: 'Audit',
+            desc: 'Track usage, models, groups, and error states so teams can review operations.'
+          }
+        }
+      },
+      flow: {
+        kicker: 'Why Codex Gateway',
+        title: 'Five things developers care about, explained on one homepage.',
+        description: 'The information rhythm follows long AI coding homepages, but the proof points belong to a Codex gateway: stability, transparency, compatibility, team control, and fallback.',
+        items: {
+          stable: {
+            title: 'Stable fidelity',
+            desc: 'Put upstream accounts behind health checks and route policies to reduce single-account limits, drops, and latency swings.',
+            tags: {
+              official: 'Official lanes',
+              health: 'Health checks',
+              lowLatency: 'Low latency'
+            }
+          },
+          billing: {
+            title: 'Clear metering',
+            desc: 'Every call maps to a key, group, model, and cost record so teams can manage spend without guessing.',
+            tags: {
+              quota: 'Quota caps',
+              detail: 'Billing detail',
+              export: 'Usage export'
+            }
+          },
+          compat: {
+            title: 'Native compatibility',
+            desc: 'Keep an OpenAI-style API entry so Codex CLI, SDKs, plugins, and remote servers need minimal config changes.',
+            tags: {
+              cli: 'Codex CLI',
+              sdk: 'OpenAI SDK',
+              plugin: 'Dev plugins'
+            }
+          },
+          team: {
+            title: 'Team control',
+            desc: 'Bind members, projects, and models to different keys and group policies so permissions and budgets stay contained.',
+            tags: {
+              group: 'Groups',
+              key: 'Keys',
+              policy: 'Policies'
+            }
+          },
+          fallback: {
+            title: 'Failure fallback',
+            desc: 'When one upstream is unavailable, the gateway switches to a standby path by rule to keep development flows moving.',
+            tags: {
+              auto: 'Auto switch',
+              pool: 'Account pool',
+              trace: 'Error trace'
+            }
+          }
+        }
+      },
+      workflows: {
+        kicker: 'Developer workflows',
+        title: 'From personal CLI to team console, everything uses the same entry.',
+        description: 'No fake testimonials. The page explains real use cases: local tools, remote servers, team projects, and cost review.',
+        items: {
+          cli: {
+            title: 'Local Codex CLI',
+            desc: 'Configure one base_url and API key locally while model switching, pools, and limits live in the platform.'
+          },
+          team: {
+            title: 'Shared model pool',
+            desc: 'Assign separate keys and budgets to projects while watching request volume, failure rate, and spend.'
+          },
+          ops: {
+            title: 'Server scripts',
+            desc: 'Remote tasks, CI scripts, and automation tools call multi-model capacity through an OpenAI-compatible interface.'
+          },
+          bill: {
+            title: 'Cost review',
+            desc: 'Review consumption by user, group, model, and date to quickly see where quota went.'
+          }
+        }
+      },
+      faq: {
+        kicker: 'FAQ',
+        title: 'Frequently asked questions',
+        description: 'Common pre-purchase questions are surfaced early to make the first integration easier.',
+        items: {
+          rate: {
+            question: 'How are rates and hidden fees handled?',
+            answer: 'The console should show model rates, quota deductions, and plan rules clearly. This homepage promises transparency without hardcoding prices.'
+          },
+          codex: {
+            question: 'Can it be used directly with Codex CLI?',
+            answer: 'Yes. If the client supports an OpenAI-compatible base_url and API key, it can use the gateway through the /v1 path.'
+          },
+          remote: {
+            question: 'How do remote servers or automation scripts connect?',
+            answer: 'Point base_url to the gateway, replace the API key with a platform key, and most calls can stay unchanged.'
+          },
+          quota: {
+            question: 'What happens when quota runs out?',
+            answer: 'You can add credit, adjust group quota, or temporarily switch to a standby upstream policy in the console.'
+          },
+          provider: {
+            question: 'Which upstream models are supported?',
+            answer: 'The page presents Codex, OpenAI, Claude, Gemini, Antigravity, and custom OpenAI-compatible upstreams. Actual availability follows console configuration.'
+          }
+        }
+      },
+      cta: {
+        kicker: 'Ready to connect',
+        title: 'Bring scattered model accounts into one Codex gateway.',
+        description: 'Create a key in the console, point the client base_url at the gateway, and let it handle routing, metering, and fallback.',
+        button: 'Start Using'
+      }
+    },
+    dossier: {
+      product: 'Sub2API',
+      brandLine: 'Access Dossier',
+      docs: 'Docs',
+      light: 'Light',
+      dark: 'Dark',
+      fileLabel: 'Access Dossier',
+      eyebrow: 'Access Dossier / One-page gateway',
+      title: 'Put Codex on one auditable model channel.',
+      description: 'This is not another proxy homepage. It is an executable access dossier: one entry point for keys, sessions, account pools, metering, and failover, so every request can be routed, recorded, and explained.',
+      primaryCta: 'Open Access Dossier',
+      secondaryCta: 'Read Protocol',
+      facts: {
+        key: {
+          label: 'Unified entry',
+          detail: 'Clients keep one OpenAI-compatible API endpoint.'
+        },
+        session: {
+          label: 'Pinned context',
+          detail: 'Sessions move through the same account path with less drift.'
+        },
+        cost: {
+          label: 'Traceable usage',
+          detail: 'Every call is filed by key, group, model, and cost.'
+        }
+      },
+      sheet: {
+        label: 'Route Manifest',
+        state: 'Available',
+        client: 'Client key',
+        policy: 'Route policy',
+        pool: 'Pool + rules',
+        traceLabel: 'Audit trail',
+        traceValue: 'Enabled'
+      },
+      routes: {
+        openai: 'Codex, Responses, and Chat-compatible lane',
+        claude: 'Long-context conversations and Anthropic-style pools',
+        gemini: 'OAuth accounts and API routing in one lane',
+        antigravity: 'Standby bridge for dedicated client flows',
+        primary: 'Primary',
+        ready: 'Ready',
+        standby: 'Standby'
+      },
+      protocol: {
+        policy: {
+          title: 'Policy first',
+          desc: 'Route by model, group, account health, and quota.'
+        },
+        pool: {
+          title: 'Account pool takeover',
+          desc: 'Upstream accounts become one stable service capacity.'
+        },
+        meter: {
+          title: 'Metered archive',
+          desc: 'Cost, quota, and request state land in one record.'
+        },
+        fallback: {
+          title: 'Automatic fallback',
+          desc: 'Switch paths when upstreams fail without client changes.'
+        }
+      }
+    },
+    nav: {
+      gateway: 'Gateway',
+      routing: 'Routing',
+      providers: 'Providers',
+      trust: 'Trust'
+    },
+    hero: {
+      kicker: 'Relay Control Plane',
+      badge: 'Codex-ready AI API relay',
+      title: 'One gateway for Codex and every upstream model.',
+      description: 'Sub2API turns scattered AI accounts into a governed API control plane: one key, session-aware routing, account pool orchestration, quota control, usage visibility, and automatic failover.',
+      primaryCta: 'Enter Console',
+      secondaryCta: 'View Integration'
+    },
+    metrics: {
+      unifiedKey: 'Unified API key for all connected upstreams',
+      providerPool: 'Provider pools with health-aware routing',
+      failover: 'Gateway watch with automatic fallback paths'
+    },
+    gatewayPanel: {
+      label: 'Gateway Map',
+      title: 'Live Relay Control',
+      live: 'Healthy',
+      clientKey: 'Client Key',
+      upstreams: 'Upstream Pool',
+      failover: 'auto failover',
+      steps: {
+        policy: 'Policy router selects model and group',
+        session: 'Session stickiness keeps context stable',
+        quota: 'Quota guard records cost and limits'
+      },
+      signals: {
+        latency: 'P95 latency',
+        uptime: 'Gateway health',
+        quota: 'Daily quota used',
+        failover: 'Fallback mode'
+      },
+      providers: {
+        openai: 'Responses / Chat / Codex',
+        claude: 'Messages and long context',
+        gemini: 'OAuth and API routing',
+        antigravity: 'Dedicated client bridge'
+      },
+      status: {
+        primary: 'primary',
+        ready: 'ready',
+        standby: 'standby'
+      }
+    },
+    capabilities: {
+      kicker: 'Gateway capabilities',
+      title: 'Built for relay operations, not just API proxying.',
+      description: 'The homepage now presents Sub2API as an operational control plane for AI access, with product signals that match how Codex relay users evaluate reliability.',
+      items: {
+        key: {
+          title: 'Unified Key Access',
+          desc: 'Expose one stable OpenAI-compatible key while routing requests to multiple upstream providers.'
+        },
+        routing: {
+          title: 'Smart Routing',
+          desc: 'Dispatch by model, group, health, account capacity, and fallback policy without client-side changes.'
+        },
+        session: {
+          title: 'Session Persistence',
+          desc: 'Keep conversations pinned to the right account path so Codex-style workflows remain consistent.'
+        },
+        usage: {
+          title: 'Usage Visibility',
+          desc: 'Track quota, spend, model usage, and team consumption from one control surface.'
+        }
+      }
+    },
     // User-focused value proposition
     heroSubtitle: 'One Key, All AI Models',
     heroDescription: 'No need to manage multiple subscriptions. Access Claude, GPT, Gemini and more with a single API key',
@@ -90,14 +427,33 @@ export default {
       }
     },
     providers: {
+      kicker: 'Provider coverage',
       title: 'Supported AI Models',
-      description: 'One API, Multiple Choices',
+      description: 'Bring OpenAI, Claude, Gemini, Antigravity, and OpenAI-compatible upstreams into one governed relay path.',
       supported: 'Supported',
       soon: 'Soon',
+      openai: 'Codex-ready OpenAI-compatible routing',
       claude: 'Claude',
+      claudeDesc: 'Anthropic-style conversations and account pools',
       gemini: 'Gemini',
+      geminiDesc: 'OAuth-backed Gemini accounts and routing',
       antigravity: 'Antigravity',
-      more: 'More'
+      antigravityDesc: 'Dedicated bridge for Antigravity clients',
+      custom: 'Custom API',
+      customDesc: 'OpenAI-compatible upstreams and private gateways',
+      more: 'More',
+      moreDesc: 'Extend the pool as your relay stack grows'
+    },
+    ops: {
+      kicker: 'Operational confidence',
+      title: 'Expose the reliability signals relay users expect.',
+      description: 'A Codex/API relay homepage should feel like a dependable operations surface: policy, quota, billing, and fallback are visible from the first screen.',
+      items: {
+        policy: 'Group and key policies keep routing decisions explicit.',
+        quota: 'Quota guards make cost and rate limits visible before failure.',
+        billing: 'Usage and billing stay tied to keys, groups, and models.',
+        fallback: 'Failover paths keep requests moving when an upstream degrades.'
+      }
     },
     // CTA section
     cta: {

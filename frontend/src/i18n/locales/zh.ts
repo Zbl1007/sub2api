@@ -10,6 +10,343 @@ export default {
     login: '登录',
     getStarted: '立即开始',
     goToDashboard: '进入控制台',
+    station: {
+      product: 'Codex 中转站',
+      brandLine: 'Codex 中转站',
+      notice: 'Codex 中转站已就绪：兼容 /v1、OpenAI SDK、Codex CLI 与常见开发插件。',
+      nav: {
+        pricing: '透明计费',
+        features: '核心优势',
+        workflows: '开发场景',
+        faq: '常见问题'
+      },
+      actions: {
+        docs: '文档',
+        light: '浅色',
+        dark: '深色'
+      },
+      hero: {
+        status: 'Online · 多上游路由可用',
+        eyebrow: '面向 Codex、Claude Code 和开发团队',
+        titleA: 'Codex 中转站，',
+        titleB: '一条 API 接入所有开发模型。',
+        description: '这个网关把 OpenAI、Claude、Gemini、Antigravity 和自定义上游整理成统一入口：一把密钥、透明计量、会话保持、账号池调度和自动回退。',
+        primaryCta: '立即使用',
+        secondaryCta: '查看教程',
+        consoleTitle: '路由控制台',
+        consoleBadge: 'AI Gateway'
+      },
+      models: {
+        ready: 'ready',
+        standby: 'standby',
+        codex: 'Codex 与 OpenAI 兼容通道',
+        claude: 'Claude Code 长上下文工作流',
+        gemini: 'Gemini Pro 与 OAuth 账号池',
+        antigravity: 'Antigravity 客户端桥接'
+      },
+      console: {
+        policy: {
+          title: '策略路由',
+          desc: '按模型、分组、账号健康和限额选择路径。'
+        },
+        pool: {
+          title: '账号池调度',
+          desc: '把多个上游整理成稳定的服务容量。'
+        },
+        meter: {
+          title: '计量归档',
+          desc: '请求、成本、配额和异常进入同一套记录。'
+        }
+      },
+      pricing: {
+        title: '透明定价',
+        description: '首页直接说明计费原则，减少试用前的不确定感。支持按额度、按分组和自定义套餐管理。',
+        rows: {
+          mode: {
+            label: '计费方式',
+            value: '按量或套餐'
+          },
+          rate: {
+            label: '倍率规则',
+            value: '清晰展示'
+          },
+          limit: {
+            label: '额度控制',
+            value: '密钥 / 分组 / 用户'
+          }
+        }
+      },
+      support: {
+        title: '遇到问题',
+        description: '把教程、文档和支持入口放在购买路径旁边，远程服务器和 CLI 接入时不用来回找。',
+        label: 'Support',
+        value: '文档 + 控制台 + GitHub'
+      },
+      spec: {
+        title: '技术规格',
+        items: {
+          security: {
+            title: '安全',
+            desc: '对外只暴露平台密钥，上游账号集中托管和隔离。'
+          },
+          compat: {
+            title: '兼容性',
+            desc: '兼容 OpenAI SDK、Codex CLI、开发插件和常见 /v1 调用。'
+          },
+          failover: {
+            title: '自动回退',
+            desc: '上游异常时按策略切换，客户端不需要改配置。'
+          },
+          audit: {
+            title: '审计',
+            desc: '用量、模型、分组和错误状态可追踪，方便团队复盘。'
+          }
+        }
+      },
+      flow: {
+        kicker: '为什么选择 Codex 中转站',
+        title: '开发者真正关心的五件事，首页一次讲清楚。',
+        description: '参考长首页的信息节奏，但把内容改成 Codex 中转站自己的能力证明：稳定、透明、兼容、团队控制和故障回退。',
+        items: {
+          stable: {
+            title: '稳定保真',
+            desc: '把上游账号放进健康检查和路由策略里，减少单账号限流、掉线和响应波动。',
+            tags: {
+              official: '官方通道',
+              health: '健康检查',
+              lowLatency: '低延迟'
+            }
+          },
+          billing: {
+            title: '扣费透明',
+            desc: '每次调用都能落到密钥、分组、模型和费用记录上，团队不用靠猜来控制成本。',
+            tags: {
+              quota: '配额上限',
+              detail: '账单明细',
+              export: '用量导出'
+            }
+          },
+          compat: {
+            title: '原生兼容',
+            desc: '保持 OpenAI 风格 API 入口，让 Codex CLI、SDK、插件和远程服务器都能少改配置接入。',
+            tags: {
+              cli: 'Codex CLI',
+              sdk: 'OpenAI SDK',
+              plugin: '开发插件'
+            }
+          },
+          team: {
+            title: '团队可控',
+            desc: '不同成员、项目和模型可以绑定不同密钥与分组策略，权限和预算更容易收住。',
+            tags: {
+              group: '分组',
+              key: '密钥',
+              policy: '策略'
+            }
+          },
+          fallback: {
+            title: '故障回退',
+            desc: '当某个上游不可用时，网关按规则切换到备用路径，让正在跑的开发流程尽量不中断。',
+            tags: {
+              auto: '自动切换',
+              pool: '账号池',
+              trace: '异常记录'
+            }
+          }
+        }
+      },
+      workflows: {
+        kicker: '开发者场景',
+        title: '从个人 CLI 到团队控制台，都走同一条入口。',
+        description: '不伪造评价，用真实使用场景说明价值：你可以把网关放在本地、服务器、团队项目和成本管理流程里。',
+        items: {
+          cli: {
+            title: '本地 Codex CLI',
+            desc: '本地只配置一个 base_url 和 API Key，模型切换、账号池和限额由平台处理。'
+          },
+          team: {
+            title: '团队共享模型池',
+            desc: '给不同项目分配独立密钥和预算，统一观察请求量、失败率和费用。'
+          },
+          ops: {
+            title: '服务器脚本接入',
+            desc: '远程任务、CI 脚本和自动化工具通过 OpenAI 兼容接口调用多模型能力。'
+          },
+          bill: {
+            title: '成本复盘',
+            desc: '按用户、分组、模型和日期查看消耗，快速定位额度用在哪里。'
+          }
+        }
+      },
+      faq: {
+        kicker: 'FAQ',
+        title: '常见问题解答',
+        description: '把购买前最常见的问题前置，和参考站一样降低第一次接入的犹豫。',
+        items: {
+          rate: {
+            question: '倍率和隐藏收费怎么处理？',
+            answer: '建议在控制台明确展示模型倍率、额度扣减和套餐规则；页面文案只承诺透明，不写死具体价格。'
+          },
+          codex: {
+            question: '能直接给 Codex CLI 使用吗？',
+            answer: '可以。只要客户端支持 OpenAI 兼容的 base_url 和 API Key，就可以接入网关的 /v1 路径。'
+          },
+          remote: {
+            question: '远程服务器或自动化脚本怎么接？',
+            answer: '把 base_url 指向网关地址，把 API Key 换成平台密钥，其他调用方式通常保持不变。'
+          },
+          quota: {
+            question: '额度用完了怎么办？',
+            answer: '可以在控制台补充额度、调整分组配额，或临时切换到备用上游策略。'
+          },
+          provider: {
+            question: '支持哪些上游模型？',
+            answer: '页面展示 Codex、OpenAI、Claude、Gemini、Antigravity 和自定义 OpenAI 兼容上游，实际以控制台配置为准。'
+          }
+        }
+      },
+      cta: {
+        kicker: '准备接入',
+        title: '把分散的模型账号，收进一个 Codex 中转站。',
+        description: '先进入控制台创建密钥，再把客户端 base_url 指向网关地址。后续的路由、计量和回退都交给网关。',
+        button: '开始使用'
+      }
+    },
+    dossier: {
+      product: 'Sub2API',
+      brandLine: '接入档案',
+      docs: '文档',
+      light: '浅色',
+      dark: '深色',
+      fileLabel: 'Access Dossier',
+      eyebrow: '接入档案 / 单页网关',
+      title: '把 Codex 接入一条可审计的模型通道。',
+      description: '这不是另一张代理首页，而是一份可执行的接入档案：一个入口接管密钥、会话、账号池、计量和回退，让每次请求都能被路由、记录和解释。',
+      primaryCta: '打开接入档案',
+      secondaryCta: '查看协议',
+      facts: {
+        key: {
+          label: '统一入口',
+          detail: '客户端只保留一个兼容 OpenAI 的 API 入口。'
+        },
+        session: {
+          label: '上下文固定',
+          detail: '会话沿着同一条账号路径推进，减少漂移。'
+        },
+        cost: {
+          label: '用量可追踪',
+          detail: '每次调用都归档到密钥、分组、模型和成本。'
+        }
+      },
+      sheet: {
+        label: 'Route Manifest',
+        state: '可用',
+        client: '客户端密钥',
+        policy: '路由策略',
+        pool: '账号池 + 规则',
+        traceLabel: '审计轨迹',
+        traceValue: '已开启'
+      },
+      routes: {
+        openai: 'Codex、Responses 与 Chat 兼容通道',
+        claude: '长上下文对话和 Anthropic 风格账号池',
+        gemini: 'OAuth 账号和 API 路由统一接入',
+        antigravity: '面向客户端桥接的备用通道',
+        primary: '主用',
+        ready: '就绪',
+        standby: '备用'
+      },
+      protocol: {
+        policy: {
+          title: '策略先行',
+          desc: '按模型、分组、账号健康和限额决定去向。'
+        },
+        pool: {
+          title: '账号池接管',
+          desc: '多个上游账号被整理成稳定的服务能力。'
+        },
+        meter: {
+          title: '计量归档',
+          desc: '成本、配额和请求状态进入同一套记录。'
+        },
+        fallback: {
+          title: '自动回退',
+          desc: '上游异常时切换路径，客户端不需要改配置。'
+        }
+      }
+    },
+    nav: {
+      gateway: '网关',
+      routing: '路由',
+      providers: '上游',
+      trust: '保障'
+    },
+    hero: {
+      kicker: '中转控制平面',
+      badge: '面向 Codex 的 AI API 中转网关',
+      title: '一个网关，接入 Codex 和所有上游模型。',
+      description: 'Sub2API 将分散的 AI 账号整理成统一的 API 控制平面：一个密钥、会话保持、账号池调度、配额控制、用量可视和自动故障切换。',
+      primaryCta: '进入控制台',
+      secondaryCta: '查看接入方式'
+    },
+    metrics: {
+      unifiedKey: '一个统一 API Key 接入所有上游',
+      providerPool: '按健康状态调度多个供应商池',
+      failover: '全天候网关监测与自动回退'
+    },
+    gatewayPanel: {
+      label: '网关拓扑',
+      title: '实时中转控制',
+      live: '健康',
+      clientKey: '客户端密钥',
+      upstreams: '上游账号池',
+      failover: '自动切换',
+      steps: {
+        policy: '策略路由选择模型和分组',
+        session: '会话保持让上下文稳定',
+        quota: '配额守卫记录成本和限制'
+      },
+      signals: {
+        latency: 'P95 延迟',
+        uptime: '网关健康',
+        quota: '今日配额',
+        failover: '回退模式'
+      },
+      providers: {
+        openai: 'Responses / Chat / Codex',
+        claude: 'Messages 与长上下文',
+        gemini: 'OAuth 与 API 路由',
+        antigravity: '专用客户端桥接'
+      },
+      status: {
+        primary: '主路由',
+        ready: '就绪',
+        standby: '备用'
+      }
+    },
+    capabilities: {
+      kicker: '网关能力',
+      title: '不是普通代理，而是面向中转运营的控制面板。',
+      description: '新的首页将 Sub2API 呈现为 AI 访问控制平面，第一屏就展示 Codex 中转用户关心的稳定性、调度和用量能力。',
+      items: {
+        key: {
+          title: '统一密钥接入',
+          desc: '对外暴露一个稳定的 OpenAI 兼容密钥，对内路由到多个上游供应商。'
+        },
+        routing: {
+          title: '智能路由调度',
+          desc: '按模型、分组、健康状态、账号容量和回退策略分发请求，客户端无需改造。'
+        },
+        session: {
+          title: '会话保持',
+          desc: '让对话固定在合适的账号路径上，保持 Codex 类工作流的上下文一致。'
+        },
+        usage: {
+          title: '用量可视',
+          desc: '从同一个控制面查看配额、成本、模型用量和团队消费。'
+        }
+      }
+    },
     // 新增：面向用户的价值主张
     heroSubtitle: '一个密钥，畅用多个 AI 模型',
     heroDescription: '无需管理多个订阅账号，一站式接入 Claude、GPT、Gemini 等主流 AI 服务',
@@ -90,14 +427,33 @@ export default {
       }
     },
     providers: {
+      kicker: '供应商覆盖',
       title: '已支持的 AI 模型',
-      description: '一个 API，多种选择',
+      description: '将 OpenAI、Claude、Gemini、Antigravity 以及 OpenAI 兼容上游纳入一条统一的中转路径。',
       supported: '已支持',
       soon: '即将推出',
+      openai: '面向 Codex 的 OpenAI 兼容路由',
       claude: 'Claude',
+      claudeDesc: 'Anthropic 风格对话与账号池',
       gemini: 'Gemini',
+      geminiDesc: '支持 OAuth 账号和 API 路由',
       antigravity: 'Antigravity',
-      more: '更多'
+      antigravityDesc: '面向 Antigravity 客户端的专用桥接',
+      custom: '自定义 API',
+      customDesc: 'OpenAI 兼容上游和私有网关',
+      more: '更多',
+      moreDesc: '随着中转栈扩展继续接入'
+    },
+    ops: {
+      kicker: '运营可信度',
+      title: '展示中转用户真正关心的可靠性信号。',
+      description: 'Codex/API 中转站首页应该像可靠的运营面板：策略、配额、计费和回退路径从第一屏就清晰可见。',
+      items: {
+        policy: '分组和密钥策略让路由决策清晰可控。',
+        quota: '配额守卫在失败前展示成本和速率限制。',
+        billing: '用量与计费可以关联到密钥、分组和模型。',
+        fallback: '上游退化时自动回退，保持请求继续前进。'
+      }
     },
     // CTA 区块
     cta: {
